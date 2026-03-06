@@ -5,8 +5,8 @@ public class movimientoViejo : MonoBehaviour
 {
     Rigidbody2D playerRB;//Variable para el rigidbody de nuestro player
     public float velPlayer;
+    public float velSalto;
     // Asi funciona el viejo input, pero despues de esto usaremos
-    // solamente el nuevo
     void Start()
     {
        playerRB=GetComponent<Rigidbody2D>(); 
@@ -17,5 +17,10 @@ public class movimientoViejo : MonoBehaviour
     {
         float movimientoH=Input.GetAxis("Horizontal");
         playerRB.linearVelocityX=movimientoH*velPlayer;
+
+        if (Input.GetButtonDown("Jump"))
+        {
+            playerRB.AddForceY(velSalto,ForceMode2D.Impulse);
+        }
     }
 }

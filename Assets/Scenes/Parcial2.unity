@@ -429,10 +429,10 @@ MonoBehaviour:
   CameraDistance: 10
   DeadZoneDepth: 0
   Composition:
-    ScreenPosition: {x: 0.0000004470348, y: -0.001851678}
+    ScreenPosition: {x: 0.0000003874302, y: -0.00000020861626}
     DeadZone:
       Enabled: 1
-      Size: {x: 0.8364591, y: 0.8092616}
+      Size: {x: 0.5364587, y: 0.4999994}
     HardLimits:
       Enabled: 0
       Size: {x: 0.8364591, y: 0.933336}
@@ -497,7 +497,7 @@ Transform:
   m_GameObject: {fileID: 215816561}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.5400124, y: -0.53962684, z: -10}
+  m_LocalPosition: {x: -6.640011, y: 0.1499969, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -960,7 +960,7 @@ Transform:
   m_GameObject: {fileID: 1324231017}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.54, y: -0.51, z: 0}
+  m_LocalPosition: {x: -6.64, y: 0.15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -980,6 +980,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::movimientoViejo
   velPlayer: 10
   velSalto: 5
+  bala: {fileID: 8508885794962455740, guid: 4d65697b131d68740b491552188c7d49, type: 3}
 --- !u!1 &1469636638
 GameObject:
   m_ObjectHideFlags: 0
@@ -1573,7 +1574,7 @@ Transform:
   m_GameObject: {fileID: 1846593292}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.5400124, y: -0.53962684, z: -10}
+  m_LocalPosition: {x: -6.640011, y: 0.1499969, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

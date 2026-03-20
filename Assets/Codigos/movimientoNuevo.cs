@@ -21,6 +21,7 @@ public class movimientoNuevo : MonoBehaviour
     void Update()
     {
         float movimientoH=controles.actions["Move"].ReadValue<Vector2>().x;
+        //playerRB.linearVelocityX+=movimientoH*velPlayer;// Mov tipo aceleracion
         playerRB.linearVelocityX=movimientoH*velPlayer;
 
         if (movimientoH > 0)

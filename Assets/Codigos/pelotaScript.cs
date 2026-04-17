@@ -8,6 +8,8 @@ public class pelotaScript : MonoBehaviour
     Rigidbody2D rbPelota;
     public TextMeshProUGUI textop1,textop2;
     int scorep1,scorep2;
+    bool playing=false;
+    public float pelotaSpeed;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -18,9 +20,10 @@ public class pelotaScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (controles.actions["Attack"].WasPressedThisFrame())
+        if (controles.actions["Attack"].WasPressedThisFrame() && !playing)
         {
-            rbPelota.AddForce(new Vector2(1,1)*10,ForceMode2D.Impulse);
+            rbPelota.AddForce(new Vector2(1,1)*pelotaSpeed,ForceMode2D.Impulse);
+            playing=true;
         }
     }
 
@@ -44,5 +47,6 @@ public class pelotaScript : MonoBehaviour
     {
         transform.position=Vector2.zero;
         rbPelota.linearVelocity=Vector2.zero;
+        playing=false;
     }
 }

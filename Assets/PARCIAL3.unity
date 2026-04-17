@@ -428,6 +428,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   textop1: {fileID: 35384844}
   textop2: {fileID: 382968512}
+  pelotaSpeed: 15
 --- !u!114 &150995914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -608,6 +609,7 @@ GameObject:
   - component: {fileID: 363884253}
   - component: {fileID: 363884252}
   - component: {fileID: 363884251}
+  - component: {fileID: 363884255}
   m_Layer: 0
   m_Name: Player1
   m_TagString: Untagged
@@ -762,6 +764,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &363884255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363884250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fef90312ba1b4f8478c8bf00d6030e95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  controlp1: {fileID: 150995914}
+  playerSpeed: 10
 --- !u!1 &382968510
 GameObject:
   m_ObjectHideFlags: 0
@@ -1266,6 +1282,7 @@ GameObject:
   - component: {fileID: 1726304502}
   - component: {fileID: 1726304501}
   - component: {fileID: 1726304500}
+  - component: {fileID: 1726304504}
   m_Layer: 0
   m_Name: Player2
   m_TagString: Untagged
@@ -1396,7 +1413,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.20764458, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.69943285, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1420,6 +1437,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1726304504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726304499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74548455dbf5e1c4c9532a4612e06dbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  posPelota: {fileID: 150995912}
+  cpuSpeed: 10
 --- !u!1 &1750179011
 GameObject:
   m_ObjectHideFlags: 0

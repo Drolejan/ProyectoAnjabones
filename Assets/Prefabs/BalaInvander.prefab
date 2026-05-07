@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6306630620757447801}
   - component: {fileID: 8974637160831726453}
   m_Layer: 0
-  m_Name: Bala
+  m_Name: BalaInvander
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
